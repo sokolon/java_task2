@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -30,7 +31,10 @@ public class Main {
             }
 
         }
-        System.out.println(result);
+        Collections.sort(result);
+        result.forEach((ele) -> {
+            System.out.println(ele + " " + (13 - ele));
+        });
     }
 }
 
